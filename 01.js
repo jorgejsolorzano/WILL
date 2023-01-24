@@ -11,7 +11,12 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+  const soloNumeros = array.filter(function(elemento){
+    if(isNaN(elemento) == false){
+      return elemento;
+    }
+  });
+  return soloNumeros;
 }
 
 // No modifiques nada debajo de esta linea //

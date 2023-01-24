@@ -14,7 +14,12 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  const miAmigo = amigos.filter(function(elemento){
+    if(elemento.nombre == nombre){
+      encontrado = elemento;
+    }
+  })
+  return encontrado;
 }
 
 // No modifiques nada debajo de esta linea //

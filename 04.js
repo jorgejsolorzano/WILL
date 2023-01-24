@@ -13,7 +13,23 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  let numerCadena = String(num);
+  let numeroSeparado = numerCadena.split('');
+  
+  
+  let numeroSeparadoInvertido = [];
+  for (var i = numeroSeparado.length; i >= 0; i--) {
+    numeroSeparadoInvertido.push(numeroSeparado[i]);
+    
+  };
+  
+  let numeroInvertido = Number(numeroSeparadoInvertido.join(''));
+  
+  if(numeroInvertido == num){
+    return true;
+  } else{
+    return false;
+  }
 }
 
 // No modifiques nada debajo de esta linea //
